@@ -3,7 +3,70 @@
 This project is a full-stack website for ISTE NITK, built with React for the frontend and Django for the backend.  It features a modern, responsive design with a blue and white theme, multiple pages for showcasing ISTE's activities, and a REST API for managing content.
 
 ## Project Structure
-
+iste-nitk/
+├── backend/ # Django Backend
+│ ├── api/ # Django app for the API
+│ │ ├── migrations/
+│ │ ├── admin.py
+│ │ ├── apps.py
+│ │ ├── models.py # Database models (Event, Blog, SIG, Project)
+│ │ ├── serializers.py # API serializers
+│ │ ├── urls.py # API endpoint URLs
+│ │ ├── views.py # API views (logic)
+│ │ └── ...
+│ ├── core/ # Main Django project settings
+│ │ ├── settings.py # Project settings (database, installed apps, etc.)
+│ │ ├── urls.py # Main project URL configuration
+│ │ ├── wsgi.py
+│ │ └── ...
+│ ├── manage.py
+│ ├── requirements.txt # Python dependencies
+│ └── ...
+├── frontend/ # React Frontend
+│ ├── node_modules/
+│ ├── public/
+│ │ ├── index.html
+│ │ └── ...
+│ ├── src/
+│ │ ├── components/ # Reusable UI components
+│ │ │ ├── Navbar.js
+│ │ │ ├── Footer.js
+│ │ │ ├── Hero.js
+│ │ │ ├── GallerySlider.js
+│ │ │ ├── EventCard.js
+│ │ │ ├── BlogCard.js
+│ │ │ ├── SIGCard.js
+│ │ │ ├── CountdownTimer.js
+│ │ │ ├── SocialIcons.js
+│ │ │ ├── DarkModeToggle.js
+│ │ │ └── ...
+│ │ ├── pages/ # Individual pages
+│ │ │ ├── Home.js
+│ │ │ ├── About.js
+│ │ │ ├── SIGs.js
+│ │ │ ├── SIGPage.js
+│ │ │ ├── ProjectExpo.js
+│ │ │ ├── Events.js
+│ │ │ ├── SocialInitiatives.js
+│ │ │ ├── SHE.js
+│ │ │ ├── Blogs.js
+│ │ │ ├── BlogPage.js
+│ │ │ ├── TheTeam.js
+│ │ │ ├── ContactUs.js
+│ │ │ ├── NotFound.js # 404 Page
+│ │ │ └── ...
+│ │ ├── App.js # Main app component & routing
+│ │ ├── index.js # React entry point
+│ │ ├── index.css # Global styles (Tailwind imports)
+│ │ ├── services/
+│ │ │ └── api.js # API request handling
+│ │ └── context/
+│ │ └── ThemeContext.js # Dark mode context
+│ ├── package.json # Node.js dependencies and scripts
+│ ├── tailwind.config.js # Tailwind CSS configuration
+│ └── ...
+├── .env # Environment variables (database URL, etc. - IMPORTANT: DO NOT COMMIT THIS FILE)
+└── README.md # This file
 
 ## Getting Started
 
