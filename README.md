@@ -3,6 +3,7 @@
 This project is a full-stack website for ISTE NITK, built with React for the frontend and Django for the backend.  It features a modern, responsive design with a blue and white theme, multiple pages for showcasing ISTE's activities, and a REST API for managing content.
 
 ## Project Structure
+(view in code)
 iste-nitk/
 ├── backend/ # Django Backend
 │ ├── api/ # Django app for the API
